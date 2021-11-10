@@ -24,6 +24,9 @@ namespace BinaryKits.Zpl.Viewer.WebApi.Controllers
             IPrinterStorage printerStorage = new PrinterStorage();
             var drawer = new ZplElementDrawer(printerStorage);
 
+            var analyzerNew = new ZplAnalyzerNew();
+            var analyzeInfo1 = analyzerNew.Analyze(request.ZplData);
+
             var analyzer = new ZplAnalyzer(printerStorage);
             var analyzeInfo = analyzer.Analyze(request.ZplData);
 

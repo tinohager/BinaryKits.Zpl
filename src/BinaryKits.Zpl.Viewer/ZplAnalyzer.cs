@@ -1,4 +1,5 @@
 ﻿using BinaryKits.Zpl.Label.Elements;
+using BinaryKits.Zpl.Protocol.Commands;
 using BinaryKits.Zpl.Viewer.CommandAnalyzers;
 using BinaryKits.Zpl.Viewer.Models;
 using System;
